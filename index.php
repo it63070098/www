@@ -14,16 +14,16 @@
     <div class="container">
         <div class="row">
             <div class="col-5 col-md-5">
-                <img src="img/work/work5.jpg" class="img-fluid" />
+                <img src="work5.jpg" class="img-fluid" />
             </div>
             <div class="col-2 col-md-2">
-                <img src="img/work/work6.jpg" class="img-fluid img-thumbnail" />
-                <img src="img/work/work.jpg" class="img-fluid img-thumbnail" />
-                <img src="img/work/work8.jpg" class="img-fluid img-thumbnail" />
+                <img src="work6.jpg" class="img-fluid img-thumbnail" />
+                <img src="work.jpg" class="img-fluid img-thumbnail" />
+                <img src="work8.jpg" class="img-fluid img-thumbnail" />
             </div>
             <div class="col-4 col-md-4">
-                <img src="img/work/work4.jpg" class="img-fluid" />
-                <img src="img/work/work7.jpg" class="img-fluid" />
+                <img src="work4.jpg" class="img-fluid" />
+                <img src="work7.jpg" class="img-fluid" />
             </div>
         </div> <!-- Close Row 2 -->
     </div> <!-- Close container -->
