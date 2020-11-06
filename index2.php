@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-4 col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="img/staffs/staff2.jpg">
+                    <img class="card-img-top" src="staff2.jpg">
                     <div class="card body">
                         <h4 class="card-title">Our Staff 1</h4>
                         <p class="card-text">hello !</p>
@@ -25,7 +25,7 @@
             </div>
             <div class="col-4 col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="img/staffs/staff3.jpg">
+                    <img class="card-img-top" src="staff3.jpg">
                     <div class="card body">
                         <h4 class="card-title">Our Staff 2</h4>
                         <p class="card-text">hello !</p>
@@ -35,7 +35,7 @@
             </div>
             <div class="col-4 col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="img/staffs/staff4.jpg">
+                    <img class="card-img-top" src="staff4.jpg">
                     <div class="card body">
                         <h4 class="card-title">Our Staff 3</h4>
                         <p class="card-text">hello !</p>
