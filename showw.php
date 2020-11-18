@@ -38,7 +38,7 @@ while($Result = mysqli_fetch_array($res))
 ?>
 </table>
   <div 
-   <button type="submit" formaction="https://www.w3docs.com">เพิ่ม</button>
+   <button onclick="window.location.href='https://w3docs.com';">เพิ่ม</button>
   </div>
 <?php
 mysqli_close($conn);
