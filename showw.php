@@ -16,7 +16,13 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook3');
   <tr>
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
-    <th width="150"> <div align="center">Link </div></th>
+    <th width="150"> <div align="center">Action </div>
+      <div class="container">
+  <h2>Button Elements</h2>
+  <a href="#" class="btn btn-info" role="button">Link Button</a>
+  <button type="button" class="btn btn-info">Button</button>
+  <input type="button" class="btn btn-info" value="Input Button">
+  <input type="submit" class="btn btn-info" value="Submit Button"></div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
@@ -25,7 +31,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <td><?php echo $Result['Action'];?></td>
   </tr>
 <?php
 }
