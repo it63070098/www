@@ -33,12 +33,12 @@ while($Result = mysqli_fetch_array($res))
   </div></td>
   </tr>
 <?php
-  <div class="container">
-  <input type="button" class="btn btn-info" value="เพิ่ม">
-  </div>
 }
 ?>
 </table>
+  <div class="container">
+  <input type="button" class="btn btn-info" value="เพิ่ม">
+  </div>
 <?php
 mysqli_close($conn);
 ?>
