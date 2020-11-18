@@ -19,6 +19,9 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook3');
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Action </div></th>
   </tr>
+  <div class="container">
+  <input type="button" class="btn btn-info" value="เพิ่ม">
+  </div>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
