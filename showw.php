@@ -28,6 +28,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Action'];?>
   <div class="container">
+   <a href="#" class="btn btn-info" role="button"></a>
   <button type="button" class="btn btn-info">ลบ</button>
   <input type="button" class="btn btn-info" value="แก้ไข">
   </div></td>
