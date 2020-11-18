@@ -32,10 +32,10 @@ while($Result = mysqli_fetch_array($res))
   <input type="button" class="btn btn-info" value="แก้ไข">
   </div></td>
   </tr>
-    <div class="container">
+<?php
+  <div class="container">
   <input type="button" class="btn btn-info" value="เพิ่ม">
   </div>
-<?php
 }
 ?>
 </table>
