@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta charset="UTF-8">
 <title>ITF Lab</title>
 </head>
 <body>
@@ -26,12 +27,11 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Action'];?>
-        <div class="container">
+  <div class="container">
   <h2>Button Elements</h2>
-  <a href="#" class="btn btn-info" role="button">Link Button</a>
-  <button type="button" class="btn btn-info">Button</button>
-  <input type="button" class="btn btn-info" value="Input Button">
-  <input type="submit" class="btn btn-info" value="Submit Button"></div></td>
+  <button type="button" class="btn btn-info">ลบ</button>
+  <input type="button" class="btn btn-info" value="แก้ไข">
+  </div></td>
   </tr>
 <?php
 }
