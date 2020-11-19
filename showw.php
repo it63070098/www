@@ -26,21 +26,14 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Action'];?>
-  <div class="container">
-   <a href="#" class="btn btn-info" role="button"></a>
-  <button type="button" class="btn btn-info">ลบ</button>
-  <input type="button" class="btn btn-info" value="แก้ไข">
-  </div></td>
+    <td><center><a href="edit form.html"><input type="submit" value="EDIT" class="btn btn-warning"></a>&nbsp;&nbsp;
+        <a href="delete form.html"><input type="submit" value="DELETE"  class="btn btn-danger"></a></center></td>
   </tr>
 <?php
 }
 ?>
 </table>
-  <div class="container">
-   <a href="#" class="btn btn-info" role="button"></a>
-   <button type="button" class="btn btn-info" onclick="window.location.href='https://bibibi.azurewebsites.net/form.html';">เพิ่ม</button>
-  </div>
+<center><a href="form.html"><input type="submit" value="INSERT" class="btn btn-info"></a></center>
 <?php
 mysqli_close($conn);
 ?>
