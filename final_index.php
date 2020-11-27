@@ -1,5 +1,3 @@
-https://github.com/baspop01/lab-11/tree/main/labexam
-https://github.com/it63070113/final
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,18 +17,17 @@ https://github.com/it63070113/final
 				<div class="card shadow">
 					<div class="card-body">
 						<div class="row">
-							<div class="col-6"><h1 class="text-monospace">DataBase By Phatcharapon Sasawattecha 63070115</h1></div>
-							<div class="col-6 text-right"><a href="form.html" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
+							<div class="col-6 text-right"><a href="final_form.html" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
 						</div>
 						<div class="table-responsive">
 							<?php
 								$conn = mysqli_init();
-								mysqli_real_connect($conn, 'itflabexam.mysql.database.azure.com', 'baspop01@itflabexam', 'Phatcharapon123', 'itflab#ต้องสร้างในdbeaverใหม่', 3306);
+								mysqli_real_connect($conn, 'butsayamas.mysql.database.azure.com', 'K63070098@butsayamas', 'Khaw63070098', 'itflab1', 3306);
 								if (mysqli_connect_errno($conn))
 								{
 								    die('Failed to connect to MySQL: '.mysqli_connect_error());
 								}
-								$res = mysqli_query($conn, 'SELECT * FROM guestbooks');
+								$res = mysqli_query($conn, 'SELECT * FROM guestbook_final');
 							?>
 							<table class="table table-borderless table-hover">
 								<thead>
@@ -38,8 +35,8 @@ https://github.com/it63070113/final
 										<th width="150px">Action</th>
 										<th>ชื่อสินค้า</th>
 										<th>ราคาต่อหน่วย</th>
-                                        <th>จำนวน</th>
-                                        <th>ราคาทั้งหมด</th>
+                                        					<th>ส่วนลด(%)</th>
+                                        					<th>ราคาคาหลังลด</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -47,11 +44,12 @@ https://github.com/it63070113/final
 										while($Result = mysqli_fetch_array($res)) {
 									?>
 									<tr>
-										<td><a href="delete.php?Id=<?php echo $Result['Id'];?>" class="btn btn-sm btn-danger mb-2 mb-md-0">DELETE</a>
+										<td><a href="final_delete.php?Id=<?php echo $Result['Id'];?>" 
+										       class="btn btn-sm btn-danger mb-2 mb-md-0">DELETE</a>
 										<td><?php echo $Result['Product'];?></td>
 										<td><?php echo $Result['Price'];?></td>
-                                        <td><?php echo $Result['Amount'];?></td>
-                                        <td><?php echo $Result['Total'];?></td>
+                                        					<td><?php echo $Result['Discount'];?></td>
+                                        					<td><?php echo $Result['Total'];?></td>
 									</tr>
 									<?php
 										}
