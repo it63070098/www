@@ -1,7 +1,7 @@
   
 <?php
 	$conn = mysqli_connect('butsayamas.mysql.database.azure.com', 'K63070098@butsayamas', 'Khaw63070098', 'itflab1', 'labitf');
-	$sql = 'DELETE FROM guestbook_final WHERE Id = '.$_GET['Id'].'';
+	$sql = 'DELETE FROM guestbook_final WHERE ID = '.$_GET['ID'].'';
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@
 							}
 						?>
 						</h2>
-						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-success">BACK</a></p>
+						<p align="center" class="mt-4 mb-0"><a href="final_index.php" class="btn btn-sm btn-success">BACK</a></p>
 					</div>
 				</div>
 			</div>
