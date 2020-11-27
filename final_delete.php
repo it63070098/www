@@ -1,6 +1,6 @@
 <?php
-	$conn = mysqli_connect('itflabexam.mysql.database.azure.com', 'baspop01@itflabexam', 'Phatcharapon123', 'itflab', 3306);
-	$sql = 'DELETE FROM guestbooks WHERE Id = '.$_GET['Id'].'';
+	$conn = mysqli_connect('butsayamas.mysql.database.azure.com', 'K63070098@butsayamas', 'Khaw63070098', 'itflab1', 3306);
+	$sql = 'DELETE FROM guestbook_final WHERE Id = '.$_GET['Id'].'';
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +30,7 @@
 							}
 						?>
 						</h2>
-						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-warning">HOMEPAGE</a></p>
+						<p align="center" class="mt-4 mb-0"><a href="final_index.php" class="btn btn-sm btn-warning">HOMEPAGE</a></p>
 					</div>
 				</div>
 			</div>
