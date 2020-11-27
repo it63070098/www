@@ -1,14 +1,14 @@
-<?php
+?php
 	$conn = mysqli_init();
-	mysqli_real_connect($conn, 'itflabexam.mysql.database.azure.com', 'baspop01@itflabexam', 'Phatcharapon123', 'itflab', 3306);
+	mysqli_real_connect($conn, 'butsayamas.mysql.database.azure.com', 'K63070098@butsayamas', 'Khaw63070098', 'itflab1', 3306);
 	if(mysqli_connect_errno($conn)) {
 		die('Failed to connect to MySQL: '.mysqli_connect_error());
 	}
 	$product = $_POST['product'];
 	$price = $_POST['price'];
-    $amount = $_POST['amount'];
-    $total = $price*$amount;
-	$sql = "INSERT INTO guestbooks (Product, Price, Amount, Total) VALUES ('$product', '$price', '$amount', '$total')";
+    $discount = $_POST['discount'];
+    $total = $price*$discount/100;
+	$sql = "INSERT INTO guestbook_final (Product, Price, Discount, Total) VALUES ('$product', '$price', '$discount', '$total')";
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,7 +38,7 @@
 							}
 						?>
 						</h2>
-						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-warning">BACK</a></p>
+						<p align="center" class="mt-4 mb-0"><a href="final_index.php" class="btn btn-sm btn-warning">BACK</a></p>
 					</div>
 				</div>
 			</div>
