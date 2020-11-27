@@ -7,7 +7,7 @@
 	$product = $_POST['product'];
 	$price = $_POST['price'];
     $discount = $_POST['discount'];
-    $total = $price*$discount/100;
+    $total = $_POST['price']*$_POST['discount']/100;
 	$sql = "INSERT INTO guestbook_final (Product, Price, Discount, Total) VALUES ('$product', '$price', '$discount', '$total')";
 ?>
 <!DOCTYPE html>
