@@ -1,3 +1,5 @@
+https://github.com/baspop01/lab-11/tree/main/labexam
+https://github.com/it63070113/final
 <!DOCTYPE html>
 <html>
 <head>
