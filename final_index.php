@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
 	<title>Show Data</title>
@@ -47,8 +47,8 @@
 										<td><?php echo $Result['Product'];?></td>
 										<td><?php echo $Result['Price'];?></td>
 										<td><?php echo $Result['Discount'];?></td>
-                                        					<td><?php echo $Result['Total'];?></td>
-                                        		<td><a href="final_delete.php?Id=<?php echo $Result['Id'];?>" class="btn btn-warning mb-2 mb-md-0">DEL</a>
+                                        <td><?php echo $Result['Total'];?></td>
+                                        <td><a href="final_delete.php?Id=<?php echo $Result['ID'];?>" class="btn btn-warning mb-2 mb-md-0">DEL</a>
 									</tr>
 									<?php
 										}
