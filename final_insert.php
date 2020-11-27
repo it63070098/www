@@ -6,7 +6,7 @@ require('connect.php');
         $discount = $_POST['Discount'];
         $total = $price * $discount /100;
 
-        $sql = "INSERT INTO labitf1 (Product, Price, Discount, Total) value ('$product','$price', '$discount', '$total')";
+        $sql = "INSERT INTO guestbook_final (Product, Price, Discount, Total) value ('$product','$price', '$discount', '$total')";
 
         if(mysqli_query($conn, $sql)){
             echo "New data insert successfully";
