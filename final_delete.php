@@ -1,7 +1,7 @@
   
 <?php
 	$conn = mysqli_connect('butsayamas.mysql.database.azure.com', 'K63070098@butsayamas', 'Khaw63070098', 'itflab1');
-	$sql = 'DELETE FROM guestbook_final WHERE ID = '.$_GET['ID'].'';
+	$sql = 'DELETE FROM guestbook_final WHERE Id = '.$_GET['Id'].'';
 ?>
 <!DOCTYPE html>
 <html>
