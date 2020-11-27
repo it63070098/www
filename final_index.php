@@ -44,10 +44,10 @@
 									<tr>
 										<td><a href="final_delete.php?Id=<?php echo $Result['Id'];?>" 
 										       class="btn btn-sm btn-danger mb-2 mb-md-0">DELETE</a>
-										<td><?php echo $Result['Product'];?></td>
-										<td><?php echo $Result['Price'];?></td>
-                                        					<td><?php echo $Result['Discount'];?></td>
-                                        					<td><?php echo $Result['Total'];?></td>
+										<td><?php echo $Result['product'];?></td>
+										<td><?php echo $Result['price'];?></td>
+                                        					<td><?php echo $Result['discount'];?></td>
+                                        					<td><?php echo $Result['total'];?></td>
 									</tr>
 									<?php
 										}
